@@ -25,13 +25,16 @@ SECRET_KEY = '^=g3)z@27-)gp)gzv#2_w3ies18%8tjyjt1q1c-x^ycd9f)yjv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['47.95.120.177',]
+ALLOWED_HOSTS = ['47.95.120.177','39.97.122.254','127.0.0.1','exam.yanshanjiance.cn']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'user.apps.UserConfig',
     'shiti.apps.ShitiConfig',
+    'shijuan.apps.ShijuanConfig',
+    'sheet.apps.SheetConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
